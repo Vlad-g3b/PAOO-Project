@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RiskManagement
 {
-    public partial class mainFrame : Form
+    public partial class Form1 : Form
     {
-        public mainFrame()
+        public Form1()
         {
             InitializeComponent();
         }
