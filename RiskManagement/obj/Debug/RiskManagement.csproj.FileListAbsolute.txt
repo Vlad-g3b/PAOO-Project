@@ -8,3 +8,13 @@ D:\Facultate\PAOO\PAOO-Project\PAOO-Project\RiskManagement\obj\Debug\RiskManagem
 D:\Facultate\PAOO\PAOO-Project\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.exe
 D:\Facultate\PAOO\PAOO-Project\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.pdb
 D:\Facultate\PAOO\PAOO-Project\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.main.resources
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\bin\Debug\RiskManagement.exe.config
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\bin\Debug\RiskManagement.exe
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\bin\Debug\RiskManagement.pdb
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.csprojAssemblyReference.cache
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.main.resources
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.Properties.Resources.resources
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.csproj.GenerateResource.cache
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.csproj.CoreCompileInputs.cache
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.exe
+C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.pdb
