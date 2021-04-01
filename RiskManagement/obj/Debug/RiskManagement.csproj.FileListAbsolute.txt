@@ -18,3 +18,16 @@ C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement
 C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.csproj.CoreCompileInputs.cache
 C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.exe
 C:\Users\Irina\Desktop\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.pdb
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.csprojAssemblyReference.cache
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.main.resources
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.Properties.Resources.resources
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.csproj.GenerateResource.cache
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.csproj.CoreCompileInputs.cache
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.exe
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.pdb
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\bin\Debug\RiskManagement.exe.config
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\bin\Debug\RiskManagement.exe
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\bin\Debug\RiskManagement.pdb
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\bin\Debug\Oracle.DataAccess.dll
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\obj\Debug\RiskManagement.csproj.CopyComplete
+D:\Facultate\PAOO\PAOO-Project\RiskManagement\bin\Debug\Oracle.ManagedDataAccess.dll
