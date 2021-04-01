@@ -31,7 +31,6 @@ namespace RiskManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fisierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -289,15 +288,14 @@ namespace RiskManagement
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.AutoSize = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.mainInterface);
-            this.panel1.Location = new System.Drawing.Point(0, 52);
+            this.panel1.Controls.Add(this.statusStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1643, 519);
+            this.panel1.Size = new System.Drawing.Size(1643, 541);
             this.panel1.TabIndex = 2;
             // 
             // mainInterface
@@ -384,7 +382,6 @@ namespace RiskManagement
             this.identificareAmenintariToolStripMenuItem.Padding = new System.Windows.Forms.Padding(4);
             this.identificareAmenintariToolStripMenuItem.Size = new System.Drawing.Size(280, 33);
             this.identificareAmenintariToolStripMenuItem.Text = "Identificare amenintari";
-            this.identificareAmenintariToolStripMenuItem.Click += new System.EventHandler(this.identificareAmenintariToolStripMenuItem_Click);
             // 
             // identificareVulnerabilitatiToolStripMenuItem
             // 
@@ -1047,19 +1044,16 @@ namespace RiskManagement
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 9;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
-            this.tableLayoutPanel4.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label10, 7, 2);
+            this.tableLayoutPanel4.ColumnCount = 7;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.12903F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 203F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.01875F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.01875F));
             this.tableLayoutPanel4.Controls.Add(this.label9, 2, 3);
+            this.tableLayoutPanel4.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.label5, 0, 3);
@@ -1083,16 +1077,13 @@ namespace RiskManagement
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1334, 211);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.tableLayoutPanel4.SetColumnSpan(this.label2, 9);
+            this.tableLayoutPanel4.SetColumnSpan(this.label2, 7);
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 0);
@@ -1102,41 +1093,14 @@ namespace RiskManagement
             this.label2.Text = "Adaguare / editatre bunuri";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1086, 68);
-            this.label10.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(135, 29);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Cost de reducere:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(359, 100);
-            this.label9.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 29);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Impact maxim:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Right;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 36);
-            this.label3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label3.Location = new System.Drawing.Point(47, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 29);
+            this.label3.Size = new System.Drawing.Size(149, 32);
             this.label3.TabIndex = 1;
             this.label3.Text = "Nomendator bunuri:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1146,10 +1110,9 @@ namespace RiskManagement
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Right;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(110, 68);
-            this.label4.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label4.Location = new System.Drawing.Point(141, 68);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 29);
+            this.label4.Size = new System.Drawing.Size(55, 32);
             this.label4.TabIndex = 2;
             this.label4.Text = "Nume:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1529,7 +1492,16 @@ namespace RiskManagement
             this.label14.Text = "Nivel minim:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label15
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(867, 36);
+            this.label6.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 29);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Domeniu:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             this.label15.AutoSize = true;
             this.label15.Dock = System.Windows.Forms.DockStyle.Right;
@@ -1542,7 +1514,16 @@ namespace RiskManagement
             this.label15.Text = "Nivel maxim:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label16
+            this.label7.AutoSize = true;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(898, 68);
+            this.label7.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 29);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Cost:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             this.label16.AutoSize = true;
             this.label16.Dock = System.Windows.Forms.DockStyle.Right;
@@ -1556,7 +1537,7 @@ namespace RiskManagement
             this.label16.Text = "Bunuri:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox5
+            // button1
             // 
             this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1566,7 +1547,7 @@ namespace RiskManagement
             this.comboBox5.Size = new System.Drawing.Size(318, 21);
             this.comboBox5.TabIndex = 5;
             // 
-            // comboBox6
+            // button2
             // 
             this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1576,7 +1557,7 @@ namespace RiskManagement
             this.comboBox6.Size = new System.Drawing.Size(318, 21);
             this.comboBox6.TabIndex = 6;
             // 
-            // comboBox7
+            // dataGridView1
             // 
             this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1586,7 +1567,7 @@ namespace RiskManagement
             this.comboBox7.Size = new System.Drawing.Size(318, 21);
             this.comboBox7.TabIndex = 7;
             // 
-            // checkedListBox1
+            // Column1
             // 
             this.tableLayoutPanel8.SetColumnSpan(this.checkedListBox1, 2);
             this.checkedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2059,9 +2040,7 @@ namespace RiskManagement
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1643, 565);
-            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
@@ -2072,6 +2051,7 @@ namespace RiskManagement
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.mainInterface.Panel1.ResumeLayout(false);
             this.mainInterface.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mainInterface)).EndInit();

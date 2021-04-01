@@ -19,8 +19,8 @@ namespace RiskManagement
             InitializeComponent();
             nmctlBun.Items.Clear();
             domeniuBun.Items.Clear();
-            //BunuriService.getInstance().incarcareBunuri(ref nmctlBun);
-           // BunuriService.getInstance().incarcareCategorii(ref domeniuBun);
+            BunuriService.getInstance().incarcareBunuri(ref nmctlBun);
+            BunuriService.getInstance().incarcareCategorii(ref domeniuBun);
         }
 
         private void identificareAmenintariToolStripMenuItem_Click(object sender, EventArgs e)
