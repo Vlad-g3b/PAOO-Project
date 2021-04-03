@@ -28,46 +28,6 @@ namespace RiskManagement
             amenintariPanel.BringToFront();
         }
 
-        private void label28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label31_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox19_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label38_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox17_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox24_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void identificareBunuriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bunuriPanel.BringToFront();
@@ -116,5 +76,6 @@ namespace RiskManagement
             BunuriService.getInstance().incarcareBunuri(ref nmctlBun);
             BunuriService.getInstance().incarcareCategorii(ref domeniuBun);
         }
+
     }
 }
