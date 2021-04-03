@@ -45,5 +45,12 @@ namespace RiskManagement.Service
         {
             BunuriDAO.getInstance().insertBun(bun);
         }
+
+
+        public void incarcareGridViewBun(ref DataGridView dataGrid)
+        {
+            dataGrid.DataSource = BunuriDAO.getInstance().loadDataGridViewBun();
+            
+        }
     }
 }

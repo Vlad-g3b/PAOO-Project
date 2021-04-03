@@ -31,6 +31,7 @@ namespace RiskManagement
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fisierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,9 +72,7 @@ namespace RiskManagement
             this.costRedTb = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridViewBun = new System.Windows.Forms.DataGridView();
             this.tratarePanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
@@ -131,14 +130,7 @@ namespace RiskManagement
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amenintariPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewAmn = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -149,13 +141,13 @@ namespace RiskManagement
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.amn_numeCb = new System.Windows.Forms.ComboBox();
+            this.amn_nivel_min = new System.Windows.Forms.ComboBox();
+            this.amn_nivel_max = new System.Windows.Forms.ComboBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.amn_numeTB = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.riscuriPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -213,7 +205,7 @@ namespace RiskManagement
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewBun)).BeginInit();
             this.tratarePanel.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
@@ -228,7 +220,7 @@ namespace RiskManagement
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.amenintariPanel.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAmn)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
@@ -315,10 +307,10 @@ namespace RiskManagement
             // 
             // mainInterface.Panel2
             // 
+            this.mainInterface.Panel2.Controls.Add(this.amenintariPanel);
             this.mainInterface.Panel2.Controls.Add(this.bunuriPanel);
             this.mainInterface.Panel2.Controls.Add(this.tratarePanel);
             this.mainInterface.Panel2.Controls.Add(this.vulnerabilitatiPanel);
-            this.mainInterface.Panel2.Controls.Add(this.amenintariPanel);
             this.mainInterface.Panel2.Controls.Add(this.riscuriPanel);
             this.mainInterface.Size = new System.Drawing.Size(1641, 517);
             this.mainInterface.SplitterDistance = 289;
@@ -461,7 +453,7 @@ namespace RiskManagement
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.gridViewBun, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 57);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -620,6 +612,7 @@ namespace RiskManagement
             this.nmctlBun.Name = "nmctlBun";
             this.nmctlBun.Size = new System.Drawing.Size(464, 21);
             this.nmctlBun.TabIndex = 7;
+            this.nmctlBun.SelectedValueChanged += new System.EventHandler(this.nmctlBun_SelectedValueChanged);
             // 
             // numeBunTb
             // 
@@ -657,6 +650,17 @@ namespace RiskManagement
             this.impactMaxBun.Dock = System.Windows.Forms.DockStyle.Fill;
             this.impactMaxBun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.impactMaxBun.ItemHeight = 13;
+            this.impactMaxBun.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.impactMaxBun.Location = new System.Drawing.Point(646, 103);
             this.impactMaxBun.Name = "impactMaxBun";
             this.impactMaxBun.Size = new System.Drawing.Size(174, 21);
@@ -704,7 +708,6 @@ namespace RiskManagement
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(1066, 103);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 26);
@@ -713,30 +716,24 @@ namespace RiskManagement
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.anuleazaBunBtn_Click);
             // 
-            // dataGridView1
+            // gridViewBun
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 220);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1334, 232);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.gridViewBun.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewBun.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.gridViewBun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewBun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridViewBun.Location = new System.Drawing.Point(3, 220);
+            this.gridViewBun.Name = "gridViewBun";
+            this.gridViewBun.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.gridViewBun.Size = new System.Drawing.Size(1334, 232);
+            this.gridViewBun.TabIndex = 1;
             // 
             // tratarePanel
             // 
@@ -1318,7 +1315,7 @@ namespace RiskManagement
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Controls.Add(this.dataGridView2, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.dataGridViewAmn, 0, 3);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label17, 0, 2);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1332,57 +1329,15 @@ namespace RiskManagement
             this.tableLayoutPanel5.Size = new System.Drawing.Size(1346, 515);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
-            // dataGridView2
+            // dataGridViewAmn
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 348);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1320, 164);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Column9";
-            this.Column9.Name = "Column9";
+            this.dataGridViewAmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAmn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewAmn.Location = new System.Drawing.Point(3, 348);
+            this.dataGridViewAmn.Name = "dataGridViewAmn";
+            this.dataGridViewAmn.Size = new System.Drawing.Size(1320, 164);
+            this.dataGridViewAmn.TabIndex = 1;
             // 
             // tableLayoutPanel6
             // 
@@ -1447,19 +1402,19 @@ namespace RiskManagement
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.97122F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 232F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 292F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 293F));
             this.tableLayoutPanel8.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.label13, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.label14, 0, 2);
             this.tableLayoutPanel8.Controls.Add(this.label15, 0, 3);
             this.tableLayoutPanel8.Controls.Add(this.label16, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.comboBox5, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.comboBox6, 1, 2);
-            this.tableLayoutPanel8.Controls.Add(this.comboBox7, 1, 3);
+            this.tableLayoutPanel8.Controls.Add(this.amn_numeCb, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.amn_nivel_min, 1, 2);
+            this.tableLayoutPanel8.Controls.Add(this.amn_nivel_max, 1, 3);
             this.tableLayoutPanel8.Controls.Add(this.checkedListBox1, 3, 0);
             this.tableLayoutPanel8.Controls.Add(this.button4, 4, 4);
             this.tableLayoutPanel8.Controls.Add(this.button3, 3, 4);
-            this.tableLayoutPanel8.Controls.Add(this.textBox4, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.amn_numeTB, 1, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 35);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -1530,7 +1485,7 @@ namespace RiskManagement
             this.label16.AutoSize = true;
             this.label16.Dock = System.Windows.Forms.DockStyle.Right;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(699, 0);
+            this.label16.Location = new System.Drawing.Point(698, 0);
             this.label16.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.label16.Name = "label16";
             this.tableLayoutPanel8.SetRowSpan(this.label16, 2);
@@ -1539,78 +1494,89 @@ namespace RiskManagement
             this.label16.Text = "Bunuri:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox5
+            // amn_numeCb
             // 
-            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(208, 3);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(315, 21);
-            this.comboBox5.TabIndex = 5;
+            this.amn_numeCb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amn_numeCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.amn_numeCb.FormattingEnabled = true;
+            this.amn_numeCb.Location = new System.Drawing.Point(208, 3);
+            this.amn_numeCb.Name = "amn_numeCb";
+            this.amn_numeCb.Size = new System.Drawing.Size(314, 21);
+            this.amn_numeCb.TabIndex = 5;
+            this.amn_numeCb.SelectedIndexChanged += new System.EventHandler(this.amn_numeCb_SelectedIndexChanged);
             // 
-            // comboBox6
+            // amn_nivel_min
             // 
-            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(208, 71);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(315, 21);
-            this.comboBox6.TabIndex = 6;
+            this.amn_nivel_min.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amn_nivel_min.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.amn_nivel_min.FormattingEnabled = true;
+            this.amn_nivel_min.Items.AddRange(new object[] {
+            "Foare mic",
+            "Mic",
+            "Mediu",
+            "Mare",
+            "Foarte mare"});
+            this.amn_nivel_min.Location = new System.Drawing.Point(208, 71);
+            this.amn_nivel_min.Name = "amn_nivel_min";
+            this.amn_nivel_min.Size = new System.Drawing.Size(314, 21);
+            this.amn_nivel_min.TabIndex = 6;
             // 
-            // comboBox7
+            // amn_nivel_max
             // 
-            this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(208, 105);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(315, 21);
-            this.comboBox7.TabIndex = 7;
+            this.amn_nivel_max.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amn_nivel_max.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.amn_nivel_max.FormattingEnabled = true;
+            this.amn_nivel_max.Items.AddRange(new object[] {
+            "Foare mic",
+            "Mic",
+            "Mediu",
+            "Mare",
+            "Foarte mare"});
+            this.amn_nivel_max.Location = new System.Drawing.Point(208, 105);
+            this.amn_nivel_max.Name = "amn_nivel_max";
+            this.amn_nivel_max.Size = new System.Drawing.Size(314, 21);
+            this.amn_nivel_max.TabIndex = 7;
             // 
             // checkedListBox1
             // 
             this.tableLayoutPanel8.SetColumnSpan(this.checkedListBox1, 2);
             this.checkedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "item 1",
-            "item 2"});
-            this.checkedListBox1.Location = new System.Drawing.Point(761, 3);
+            this.checkedListBox1.Location = new System.Drawing.Point(760, 3);
             this.checkedListBox1.Name = "checkedListBox1";
             this.tableLayoutPanel8.SetRowSpan(this.checkedListBox1, 4);
-            this.checkedListBox1.Size = new System.Drawing.Size(544, 130);
+            this.checkedListBox1.Size = new System.Drawing.Size(545, 130);
             this.checkedListBox1.TabIndex = 9;
             // 
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(1018, 139);
+            this.button4.Location = new System.Drawing.Point(1017, 139);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(287, 28);
+            this.button4.Size = new System.Drawing.Size(288, 28);
             this.button4.TabIndex = 11;
             this.button4.Text = "Anuleaza";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(761, 139);
+            this.button3.Location = new System.Drawing.Point(760, 139);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(251, 28);
             this.button3.TabIndex = 10;
             this.button3.Text = "Salveaza";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox4
+            // amn_numeTB
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(208, 37);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(315, 20);
-            this.textBox4.TabIndex = 8;
+            this.amn_numeTB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amn_numeTB.Location = new System.Drawing.Point(208, 37);
+            this.amn_numeTB.Name = "amn_numeTB";
+            this.amn_numeTB.Size = new System.Drawing.Size(314, 20);
+            this.amn_numeTB.TabIndex = 8;
             // 
             // label17
             // 
@@ -2075,7 +2041,7 @@ namespace RiskManagement
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewBun)).EndInit();
             this.tratarePanel.ResumeLayout(false);
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
@@ -2098,7 +2064,7 @@ namespace RiskManagement
             this.amenintariPanel.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAmn)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
@@ -2160,9 +2126,7 @@ namespace RiskManagement
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox impactMinBun;
         private System.Windows.Forms.ComboBox impactMaxBun;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridView gridViewBun;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox domeniuBun;
         private System.Windows.Forms.TextBox costBunTb;
@@ -2184,22 +2148,15 @@ namespace RiskManagement
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox amn_numeCb;
+        private System.Windows.Forms.ComboBox amn_nivel_min;
+        private System.Windows.Forms.ComboBox amn_nivel_max;
+        private System.Windows.Forms.TextBox amn_numeTB;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewAmn;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.Panel riscuriPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;

@@ -35,5 +35,12 @@ namespace RiskManagement.View
         public Double Cost { get => cost; set => cost = value; }
         public Double Cost_red { get => cost_red; set => cost_red = value; }
 
+        public override string ToString()
+        {
+
+
+            return Nume;
+        }
     }
+    
 }

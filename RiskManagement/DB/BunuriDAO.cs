@@ -109,6 +109,31 @@ namespace RiskManagement.DB
             return categList;
         }
 
+        public DataTable loadDataGridViewBun()
+        {
+            OracleConnection con = MyDbUtils.getConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                String sql = "select bun_id ,bun_nume \"Nume\",bun_domeniu_categ \"Domeniu\" ,bun_impact_min \"Impact minim\",bun_impact_max \"Imapact maxim\", bun_cost \"Cost\", bun_cost_red \"Cost reducere\" from bunuri";
+                OracleCommand cmd = new OracleCommand(sql, con);
+                con.Open();
+                cmd.CommandType = CommandType.Text;
+                OracleDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Sunt in DAO get bunuri-----> ");
+                Console.WriteLine(e.StackTrace);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dt;
+        }
+
         public void insertBun(Bun bun)
         {
             OracleConnection con = MyDbUtils.getConnection();
