@@ -33,6 +33,7 @@ namespace RiskManagement
             AmenintareSerivice.getInstance().incarcareBunuri(ref checkedListBox1);
             AmenintareSerivice.getInstance().incarcareGridViewAmn(ref dataGridViewAmn);
             amenintariPanel.BringToFront();
+            statusLb.Text = "Identificare amenintari";
         }
 
         private void identificareBunuriToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,21 +44,32 @@ namespace RiskManagement
             BunuriService.getInstance().incarcareCategorii(ref domeniuBun);
             BunuriService.getInstance().incarcareGridViewBun(ref gridViewBun);
             bunuriPanel.BringToFront();
+            statusLb.Text = "Identificare bunuri";
         }
 
         private void identificareVulnerabilitatiToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            nmctlVln.Items.Clear();
+            vln_bunuriClb.Items.Clear();
+            VulnerabilitatiSerivce.getInstance().incarcareVulnerabilitati(ref nmctlVln);
+            VulnerabilitatiSerivce.getInstance().incarcareGridViewVulnerabilitate(ref dataGridVulnerabilitati);
+            AmenintareSerivice.getInstance().incarcareBunuri(ref vln_bunuriClb);
+
+
             vulnerabilitatiPanel.BringToFront();
+            statusLb.Text = "Identificare vulnerabilitati";
         }
 
         private void identificareaRiscuriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             riscuriPanel.BringToFront();
+            statusLb.Text = "Identificare riscuri";
         }
 
         private void tratareRiscuriSiIdentificareContramasuriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tratarePanel.BringToFront();
+            statusLb.Text = "Tratare riscuri si identificare contramasuri";
         }
 
         private void nmctlBun_SelectedValueChanged(object sender, EventArgs e)
@@ -138,9 +150,8 @@ namespace RiskManagement
                 {
                     Amenintare amenintare = new Amenintare(((Bun) obj).Bun_id, amn_numeTB.Text, amn_nivel_max.SelectedItem.ToString(), amn_nivel_min.SelectedItem.ToString());
                     AmenintareSerivice.getInstance().insertAmenintare(amenintare);
-                    AmenintareSerivice.getInstance().incarcareGridViewAmn(ref dataGridViewAmn);
-
                 }
+                    AmenintareSerivice.getInstance().incarcareGridViewAmn(ref dataGridViewAmn);
                 MessageBox.Show("Inserare cu succes!");
             }
         }
@@ -183,6 +194,55 @@ namespace RiskManagement
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 checkedListBox1.SetItemChecked(i, false);
+            }
+        }
+
+        private void nmctlVln_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (nmctlVln.SelectedIndex != -1)
+            {
+                vln_nume.Text = nmctlVln.SelectedItem.ToString();
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (allOkVulnerabilitate())
+            {
+                foreach (var obj in vln_bunuriClb.CheckedItems)
+                {
+                    Vulnerabilitate vulnerabilitate = new Vulnerabilitate(-1,Int32.Parse(vln_nvl.SelectedItem.ToString()), vln_nume.Text,((Bun)obj).Bun_id);
+                    VulnerabilitatiSerivce.getInstance().insertVulnerabilitate(vulnerabilitate);
+                }
+                VulnerabilitatiSerivce.getInstance().incarcareVulnerabilitati(ref nmctlVln);
+                VulnerabilitatiSerivce.getInstance().incarcareGridViewVulnerabilitate(ref dataGridVulnerabilitati);
+                AmenintareSerivice.getInstance().incarcareBunuri(ref vln_bunuriClb);
+                MessageBox.Show("Inserare cu succes!");
+            }
+        }
+
+        private bool allOkVulnerabilitate()
+        {
+            if(vln_nume.Text.Length == 0)
+            {
+                MessageBox.Show("Completati numele!");
+                return false;
+            }
+            if(vln_nvl.SelectedIndex == -1) {
+                MessageBox.Show("Selectati un nivel!");
+                return false;
+            }
+            return true;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            vln_nume.Clear();
+            nmctlVln.SelectedIndex = -1;
+            vln_nvl.SelectedIndex = -1;
+            for (int i = 0; i < vln_bunuriClb.Items.Count; i++)
+            {
+                vln_bunuriClb.SetItemChecked(i, false);
             }
         }
     }

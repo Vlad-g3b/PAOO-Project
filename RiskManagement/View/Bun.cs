@@ -37,8 +37,6 @@ namespace RiskManagement.View
 
         public override string ToString()
         {
-
-
             return Nume;
         }
     }

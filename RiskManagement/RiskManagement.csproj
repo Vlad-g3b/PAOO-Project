@@ -69,6 +69,7 @@
     <Compile Include="DB\AmenintariDAO.cs" />
     <Compile Include="DB\BunuriDAO.cs" />
     <Compile Include="DB\MyDbUtils.cs" />
+    <Compile Include="DB\VulnerabilitatiDAO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,8 +80,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\AmenintareSerivice.cs" />
     <Compile Include="Service\BunuriService.cs" />
+    <Compile Include="Service\VulnerabilitatiSerivce.cs" />
     <Compile Include="View\Amenintare.cs" />
     <Compile Include="View\Bun.cs" />
+    <Compile Include="View\Vulnerabilitati.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
