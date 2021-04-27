@@ -64,6 +64,8 @@ namespace RiskManagement
         {
             riscuriPanel.BringToFront();
             statusLb.Text = "Identificare riscuri";
+            RiscuriSerivice.getInstance().incarcareBunuri(ref risc_bun_cb);
+
         }
 
         private void tratareRiscuriSiIdentificareContramasuriToolStripMenuItem_Click(object sender, EventArgs e)
@@ -232,6 +234,11 @@ namespace RiskManagement
                 MessageBox.Show("Selectati un nivel!");
                 return false;
             }
+            if(vln_bunuriClb.CheckedItems.Count == 0)
+            {
+                MessageBox.Show("Selectati unul sau mai multe bunuri!");
+                return false;
+            }
             return true;
         }
 
@@ -244,6 +251,30 @@ namespace RiskManagement
             {
                 vln_bunuriClb.SetItemChecked(i, false);
             }
+        }
+
+        private void risc_bun_cb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+            String bun_text = RiscuriSerivice.getInstance().getBun(risc_bun_cb);
+            risc_bun_tb.Text = bun_text != null ? bun_text : " Eroare! " ;
+            RiscuriSerivice.getInstance().getAmnForBun(risc_bun_cb,ref risc_amn_cb);
+            RiscuriSerivice.getInstance().getVlnForBun(risc_bun_cb, ref risc_vln_cb);
+            risc_amn_tb.Clear();
+
+        }
+
+        private void risc_amn_cb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String amn_text = RiscuriSerivice.getInstance().getAmn(risc_amn_cb);
+            risc_amn_tb.Text = amn_text != null ? amn_text : " Eroare! ";
+           
+
+        }
+
+        private void risc_vln_cb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -57,7 +57,7 @@ namespace RiskManagement.DB
             List<Amenintare> amenintari = new List<Amenintare>();
             try
             {
-                String sql = "select amn_id_bun, amn_nume, amn_nivel_max, amn_nivel_min from amenintari ";
+                String sql = "select amn_id_bun, amn_nume, amn_nivel_max, amn_nivel_min,amn_id from amenintari ";
                 OracleCommand cmd = new OracleCommand(sql, con);
                 con.Open();
                 cmd.CommandType = CommandType.Text;
@@ -65,7 +65,7 @@ namespace RiskManagement.DB
                 while (reader.Read())
                 {
                     int i = 0;
-                    amenintari.Add(new Amenintare(reader.GetInt32(i++),reader.GetString(i++), reader.GetString(i++), reader.GetString(i++)));
+                    amenintari.Add(new Amenintare(reader.GetInt32(i++),reader.GetString(i++), reader.GetString(i++), reader.GetString(i++), reader.GetInt32(i++)));
                 }
             }
             catch (Exception e)

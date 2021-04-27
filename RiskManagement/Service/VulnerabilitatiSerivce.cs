@@ -25,6 +25,7 @@ namespace RiskManagement.Service
 
         public void incarcareVulnerabilitati(ref ComboBox box)
         {
+            box.Items.Clear();
             List<String> vulnerabilitati = VulnerabilitatiDAO.getInstance().getVulnerabilitatiNmctl();
             foreach (var obj in vulnerabilitati)
             {

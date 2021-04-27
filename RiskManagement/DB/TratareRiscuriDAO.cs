@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 using RiskManagement.View;
 using Oracle.ManagedDataAccess.Client;
 using System.Data;
+using RiskManagement.DB;
 
-
-
-namespace RiskManagement.DB
+namespace RiskManagement
 {
-    class VulnerabilitatiDAO
+    class TratareRiscuriDAO
     {
-        private static VulnerabilitatiDAO INSTANCE;
+        private static TratareRiscuriDAO INSTANCE;
 
-        public static VulnerabilitatiDAO getInstance()
+        public static TratareRiscuriDAO getInstance()
         {
             if (INSTANCE == null)
             {
-                INSTANCE = new VulnerabilitatiDAO();
+                INSTANCE = new TratareRiscuriDAO();
             }
             return INSTANCE;
         }
@@ -29,7 +28,7 @@ namespace RiskManagement.DB
             List<Vulnerabilitate> vulnerabilitati = new List<Vulnerabilitate>();
             try
             {
-                String sql = "select vln_id, vln_nivel, vln_vulnerabilitate,  vln_id_bun from vulnerabilitati";
+                String sql = "select vln_id, vln_id_bun, vln_vulnerabilitate, vln_nivel  from vulnerabilitati";
                 OracleCommand cmd = new OracleCommand(sql, con);
                 con.Open();
                 cmd.CommandType = CommandType.Text;

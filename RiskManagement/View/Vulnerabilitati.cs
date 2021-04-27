@@ -25,5 +25,12 @@ namespace RiskManagement.View
         public int Vln_lvl { get => vln_lvl; set => vln_lvl = value; }
         public string Vln_name { get => vln_name; set => vln_name = value; }
         public int Vln_id_bun { get => vln_id_bun; set => vln_id_bun = value; }
+
+        public override string ToString()
+        {
+            return Vln_name;
+        }
     }
+
+ 
 }
