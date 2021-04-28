@@ -82,6 +82,20 @@ namespace RiskManagement.Service
             return null;
         }
 
+        internal string getVln(ComboBox risc_vln_cb)
+        {
+            List<Vulnerabilitate> vln = VulnerabilitatiDAO.getInstance().getVulnerabilitati();
+            Vulnerabilitate vln_selected = (Vulnerabilitate)risc_vln_cb.SelectedItem;
+            foreach (var obj in vln)
+            {
+                if (vln_selected.Vln_id == obj.Vln_id)
+                {
+                    return " Vulnerabilitatea  " + obj.Vln_name + " cu nivelul " + obj.Vln_lvl;
+                }
+            }
+            return null;
+        }
+
         internal void getVlnForBun(ComboBox risc_bun_cb, ref ComboBox risc_vln_cb)
         {
             risc_vln_cb.Items.Clear();
@@ -97,6 +111,15 @@ namespace RiskManagement.Service
                     risc_vln_cb.Items.Add(obj);
                 }
             }
+        }
+
+        public void insertRisc(Risc risc)
+        {
+            RiscuriDAO.getInstance().insertRisc(risc);
+        }
+        public void incarcareGridViewRiscuri(ref DataGridView dataGrid)
+        {
+            dataGrid.DataSource = RiscuriDAO.getInstance().loadDataGridViewRiscuri();
         }
     }
 }

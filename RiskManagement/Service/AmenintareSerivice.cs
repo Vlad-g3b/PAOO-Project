@@ -48,7 +48,6 @@ namespace RiskManagement.Service
         public void incarcareGridViewAmn(ref DataGridView dataGrid)
         {
             dataGrid.DataSource = AmenintariDAO.getInstance().loadDataGridViewAmenintare();
-
         }
     }
 }

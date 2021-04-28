@@ -92,7 +92,7 @@ namespace RiskManagement.DB
                 cmd.Connection = con;
                 con.Open();
                 cmd.Parameters.Add("nume", OracleDbType.Varchar2, 50).Value = amenintare.Nume;
-                cmd.Parameters.Add("id_nume", OracleDbType.Varchar2, 50).Value = amenintare.Id_bun;
+                cmd.Parameters.Add("id_bun", OracleDbType.Int32).Value = amenintare.Id_bun;
                 cmd.Parameters.Add("nivel_min", OracleDbType.Varchar2, 50).Value = amenintare.Nivel_minim;
                 cmd.Parameters.Add("nivel_max", OracleDbType.Varchar2, 50).Value = amenintare.Nivel_maxim;
                 cmd.CommandType = CommandType.Text;

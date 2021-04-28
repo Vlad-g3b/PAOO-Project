@@ -65,7 +65,7 @@ namespace RiskManagement
             riscuriPanel.BringToFront();
             statusLb.Text = "Identificare riscuri";
             RiscuriSerivice.getInstance().incarcareBunuri(ref risc_bun_cb);
-
+            RiscuriSerivice.getInstance().incarcareGridViewRiscuri(ref dataGridViewRiscuri);
         }
 
         private void tratareRiscuriSiIdentificareContramasuriToolStripMenuItem_Click(object sender, EventArgs e)
@@ -261,6 +261,7 @@ namespace RiskManagement
             RiscuriSerivice.getInstance().getAmnForBun(risc_bun_cb,ref risc_amn_cb);
             RiscuriSerivice.getInstance().getVlnForBun(risc_bun_cb, ref risc_vln_cb);
             risc_amn_tb.Clear();
+            risc_vln_tb.Clear();
 
         }
 
@@ -274,7 +275,84 @@ namespace RiskManagement
 
         private void risc_vln_cb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            String vln_text = RiscuriSerivice.getInstance().getVln(risc_vln_cb);
+            risc_vln_tb.Text = vln_text != null ? vln_text : "Eroare ! ";
+        }
 
+        private void risc_cancel_Click(object sender, EventArgs e)
+        {
+            risc_vln_tb.Clear();
+            risc_vln_cb.Items.Clear();
+            risc_nume.Clear();
+            risc_nivel.Clear();
+            risc_natura.Clear();
+            risc_amn_tb.Clear();
+            risc_amn_cb.Items.Clear();
+            risc_bun_tb.Clear();
+        }
+
+        private void risc_save_Click(object sender, EventArgs e)
+        {
+            if (allOKRisc())
+            {
+                Risc risc = new Risc(-1,risc_nume.Text,((Bun)risc_bun_cb.SelectedItem).Bun_id,float.Parse(risc_nivel.Text),float.Parse(risc_prob.Text),risc_natura.Text);
+                RiscuriSerivice.getInstance().insertRisc(risc);
+                MessageBox.Show("Inserare cu succes!");
+                RiscuriSerivice.getInstance().incarcareGridViewRiscuri(ref dataGridViewRiscuri);
+            }
+        }
+
+
+        private bool allOKRisc()
+        {
+            if(risc_bun_cb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Selecteaza un bun!");
+                return false;
+            }
+
+            if (risc_nivel.Text.Length == 0)
+            {
+                MessageBox.Show("Completati nivelul!");
+                return false;
+            }
+
+            if (risc_prob.Text.Length == 0)
+            {
+                MessageBox.Show("Completati probabilitatea de aparitie!");
+                return false;
+            }
+
+            if (risc_nume.Text.Length == 0)
+            {
+                MessageBox.Show("Completati numele!");
+                return false;
+            }
+
+            if (risc_natura.Text.Length == 0)
+            {
+                MessageBox.Show("Completati natura!");
+                return false;
+            }
+            
+            if(!float.TryParse(risc_prob.Text,out float res))
+            {
+                MessageBox.Show("Campul probabilitate accepta doar numere de tip intreg sau zecimal!(Ex: 1 sau 1.0)");
+                return false;
+            }
+
+            if (!float.TryParse(risc_nivel.Text, out float res2))
+            {
+                MessageBox.Show("Campul nivel accepta doar numere de tip intreg sau zecimal!(Ex: 1 sau 1.0)");
+                return false;
+            }
+            return true;
+        }
+
+        private void risc_diag_Click(object sender, EventArgs e)
+        {
+            Form diag = new diag();
+            diag.Show();
         }
     }
 }
