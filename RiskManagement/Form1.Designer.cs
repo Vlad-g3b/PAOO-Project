@@ -31,8 +31,8 @@ namespace RiskManagement
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fisierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -341,12 +341,13 @@ namespace RiskManagement
             this.verticalMenu.Location = new System.Drawing.Point(0, 58);
             this.verticalMenu.MdiWindowListItem = this.identificareBunuriToolStripMenuItem;
             this.verticalMenu.Name = "verticalMenu";
-            this.verticalMenu.Size = new System.Drawing.Size(287, 192);
+            this.verticalMenu.Size = new System.Drawing.Size(287, 211);
             this.verticalMenu.TabIndex = 1;
             this.verticalMenu.Text = "menuStrip2";
             // 
             // identificareBunuriToolStripMenuItem
             // 
+            this.identificareBunuriToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("identificareBunuriToolStripMenuItem.Image")));
             this.identificareBunuriToolStripMenuItem.Name = "identificareBunuriToolStripMenuItem";
             this.identificareBunuriToolStripMenuItem.Padding = new System.Windows.Forms.Padding(4);
             this.identificareBunuriToolStripMenuItem.Size = new System.Drawing.Size(280, 33);
@@ -355,6 +356,7 @@ namespace RiskManagement
             // 
             // identificareAmenintariToolStripMenuItem
             // 
+            this.identificareAmenintariToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("identificareAmenintariToolStripMenuItem.Image")));
             this.identificareAmenintariToolStripMenuItem.Name = "identificareAmenintariToolStripMenuItem";
             this.identificareAmenintariToolStripMenuItem.Padding = new System.Windows.Forms.Padding(4);
             this.identificareAmenintariToolStripMenuItem.Size = new System.Drawing.Size(280, 33);
@@ -363,6 +365,7 @@ namespace RiskManagement
             // 
             // identificareVulnerabilitatiToolStripMenuItem
             // 
+            this.identificareVulnerabilitatiToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("identificareVulnerabilitatiToolStripMenuItem.Image")));
             this.identificareVulnerabilitatiToolStripMenuItem.Name = "identificareVulnerabilitatiToolStripMenuItem";
             this.identificareVulnerabilitatiToolStripMenuItem.Padding = new System.Windows.Forms.Padding(4);
             this.identificareVulnerabilitatiToolStripMenuItem.Size = new System.Drawing.Size(280, 33);
@@ -371,6 +374,7 @@ namespace RiskManagement
             // 
             // identificareaRiscuriToolStripMenuItem
             // 
+            this.identificareaRiscuriToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("identificareaRiscuriToolStripMenuItem.Image")));
             this.identificareaRiscuriToolStripMenuItem.Name = "identificareaRiscuriToolStripMenuItem";
             this.identificareaRiscuriToolStripMenuItem.Padding = new System.Windows.Forms.Padding(4);
             this.identificareaRiscuriToolStripMenuItem.Size = new System.Drawing.Size(280, 33);
@@ -379,6 +383,7 @@ namespace RiskManagement
             // 
             // tratareRiscuriSiIdentificareContramasuriToolStripMenuItem
             // 
+            this.tratareRiscuriSiIdentificareContramasuriToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tratareRiscuriSiIdentificareContramasuriToolStripMenuItem.Image")));
             this.tratareRiscuriSiIdentificareContramasuriToolStripMenuItem.Name = "tratareRiscuriSiIdentificareContramasuriToolStripMenuItem";
             this.tratareRiscuriSiIdentificareContramasuriToolStripMenuItem.Padding = new System.Windows.Forms.Padding(4);
             this.tratareRiscuriSiIdentificareContramasuriToolStripMenuItem.Size = new System.Drawing.Size(280, 54);

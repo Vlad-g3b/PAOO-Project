@@ -135,6 +135,65 @@
   <metadata name="verticalMenu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="identificareBunuriToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHYAAAB2AU57JggAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAAyklEQVQ4T7XTPw/BQBzG8WPyJwxGo82IRCIW8QYYGCwWYjAJCTEw2HkFFqN36fu0d0nbXIcWT/LJ
+        XX/RJ5Vrza/SwRwjFDTImgZa6GOrwTfZ2TV3ogVjHHHC065X6IlT4wrqOITbIG5exjnc+uN++MAeG+sd
+        2b8whDeuwK1tuBu7GpAKdO1NsmAKV7DQgGQqaGIZbk3PrpkKqlihBv13JbVggjtmWEPH5qNTGCCWItyx
+        +W5K0jsSi76BG/RdXDTIE70kai4FV/+PMR9YSSDbL4dDWAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="identificareAmenintariToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABGUlEQVQ4T53TMU4CQRTG8RfRGIwNBfEAVh6AisZIbLkAkdKKBqKx4QhLA+fAGkOliZUFnYUxoSFR
+        EgoKaLRY/292M5kdJi7wkh8w8z52hmVW4jjeC1U2735jG9QYP4iCgf9QZfziAbNgKA/1iQVuQ80C6qj4
+        vbR/iTlOzDgQuMcUa2xchHpGx47dppkQGeAJepEbr3eFbxTtnBswEyI9fOAVutqx03tBO5PPDETOscIF
+        jjDCEAeo4Qt2dfOdzEDkEX1nfIo36E/SO3/n5k3Gfkjurv41pUxApIEZdPuR2zP9NKRbnKC1ERCpYol3
+        dAN9DkOysjr0A2noGk3YG+r0zPb0WOrxPPMDebQi6IMxDgXyJC/po7m7WP4AEp0whZ09WCoAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="identificareVulnerabilitatiToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABJ0lEQVQ4T43SsUpCYRjG8VecnASHJgcvQCSXAse8gVq8gqDFOwjEi3ArCAQ3EYKGBiFwLGpqjKAL
+        qKagoTr9n8OrfEdfwQM/+N7nfb6DwrEsy0I8JbRcKepIHJpV8QANonM17Iah2QwvOHI6z8LuRmDWxR86
+        SdbxrJt2811hMCvjGZM0993Ed+VCXhjM+vhC3edTnPm5Du36hTurg1kN7xgk2RPuk3kAdWqrLFmO8IZK
+        kt1hnswVqDNaZb5o4ge95cLza0zXsh7Ubeazh3Ms0qLnV7gI8gXyX6bnBL9oB8U9CfI2dEd38/85Xi95
+        8RyXW3Zj6K59YLiltI+NX+a7IT51uMEjWlExwqMX686thgZeoU/1e0fq6k5j+UZ9woc43tEB+KQz+wfX
+        VNJReEDgVgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="identificareaRiscuriToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAADkAAAA5AceUzXsAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABPUlEQVQ4T5WToU4DQRCGt6ECQmpqSGpQVKBI34OEClDwCk0dONBNHYqgGh6BIHiO1hAUAhwWA+n1
+        +zczy9y1ppd8udmZfyYzc3upqqoaPH24g2f4MmTL11/TFyOlFozhB/5gATNjbj7FpGnVCsgBL6CD3j0X
+        FGFKB6BOXJOLeFBVZdzABQxjsmmGFrsGOcbmzzOrtVc4hV/Q3J2Q3DGfYtKoA+UoNy9nCccgpzLEJBSY
+        BL80R6Cd3EKe6w3OwEXiE/YN2TEmrZas3NzaE9xDFGkv74bvyJFWX0e5pcAO7Ab24MOQHWPSlgJ5BJ83
+        zN2Gc6O9IV5G8CUeNgQj8JZHjVgPyhLLZwyCLnyDF5DdDfH/z2iOcpHsPLVzZGqx+kUyZ/MqD+ASHuAR
+        ruAENl/lUESdqLXtfqYIzxa/c5VWtHgzCnyynKkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tratareRiscuriSiIdentificareContramasuriToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAIEAAACBAR0ReNMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABFUlEQVQ4T43TsUoDQRDG8Y1FilTapUhjIGAwkBhbg52ksPEBFOzEJ8gDpEiZKoVVqiBoY2cZEEHR
+        wjda/98xdyxzOc+DH8zOzk0ym02IMe7EM8GPOd1VI+VECH184g1HOMGH5fql+iIIYQ69pE9cpEW2v7A9
+        1cyLvG2O8IQ9nOELS0c57alGtaO0wRSzomsIA6hpapDszzDNYkv4BjqHy3ztqRblBhjjBTqwLu7x6vRQ
+        /Q14rtCxuIn9lOVrRzjERb72VIvKETb4xjFu8ehotD9HuEbP4hbaTgO1I3Rwnq891aJyhAfoVxjiBmun
+        doQ7ZHee5wD6P6R0E0sNdEVXiv9DtXoniy2hg3nGO7Y1VKPaRowx/AL33WazAZgdgAAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
   <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -183,7 +242,6 @@
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>525, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
