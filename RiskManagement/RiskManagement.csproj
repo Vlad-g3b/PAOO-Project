@@ -96,10 +96,12 @@
     <Compile Include="Service\AmenintareSerivice.cs" />
     <Compile Include="Service\BunuriService.cs" />
     <Compile Include="Service\RiscuriSerivice.cs" />
+    <Compile Include="Service\TratareService.cs" />
     <Compile Include="Service\VulnerabilitatiSerivce.cs" />
     <Compile Include="View\Amenintare.cs" />
     <Compile Include="View\Bun.cs" />
     <Compile Include="View\Risc.cs" />
+    <Compile Include="View\Tratare.cs" />
     <Compile Include="View\Vulnerabilitati.cs" />
     <EmbeddedResource Include="diag.resx">
       <DependentUpon>diag.cs</DependentUpon>

@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using RiskManagement.DB;
+using RiskManagement.View;
+using RiskManagement.Service;
 
 namespace RiskManagement
 {
@@ -20,16 +23,12 @@ namespace RiskManagement
 
         private void diag_Load(object sender, EventArgs e)
         {
-           Series series = new Series();
-            float[] values = { 0, 70, 90, 20, 70, 220, 30, 60, 30, 81, 10, 39 };
-
-            int x = 1;
-            foreach (float v in values)
+            List<Risc> riscuri = RiscuriDAO.getInstance().getRiscuri();
+            Series series = new Series();
+            foreach (var obj in riscuri)
             {
-                series.Points.AddXY(x, v);
-                x++;
+                series.Points.AddXY(obj.Risc_name, obj.Risc_prob * 100 );
             }
-            series.ChartType = SeriesChartType.Line;
             chart1.Series.Add(series);
         }
     }

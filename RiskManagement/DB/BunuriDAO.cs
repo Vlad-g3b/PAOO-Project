@@ -160,8 +160,6 @@ namespace RiskManagement.DB
                 {
                     Console.WriteLine("Fail!");
                 }          
-
-            
             }
             catch (Exception e)
             {

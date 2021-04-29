@@ -59,6 +59,38 @@ namespace RiskManagement.DB
             }
         }
 
+        public List<Risc> getRiscuri()
+        {
+            OracleConnection con = MyDbUtils.getConnection();
+            List<Risc> riscuri = new List<Risc>();
+            try
+            {
+                String sql = "select risc_id, risc_nume, risc_id_bun,  risc_nivel, risc_prob, risc_natura from riscuri ";
+                OracleCommand cmd = new OracleCommand(sql, con);
+                con.Open();
+                cmd.CommandType = CommandType.Text;
+                OracleDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int i = 0;
+                    Risc risc = new Risc(reader.GetInt32(i++), reader.GetString(i++), reader.GetInt32(i++), (float)reader.GetDecimal(i++),(float)reader.GetDecimal(i++), reader.GetString(i++));
+                    riscuri.Add(risc);
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Sunt in DAO getRiscuri -----> ");
+                Console.WriteLine(e.StackTrace);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return riscuri;
+        }
+    
+
         public DataTable loadDataGridViewRiscuri()
         {
             OracleConnection con = MyDbUtils.getConnection();

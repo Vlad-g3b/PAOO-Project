@@ -16,6 +16,8 @@ namespace RiskManagement.View
         private String risc_natura;
         private int risc_tratat;
 
+       
+
         public Risc(int risc_id, string risc_name, int risc_id_bun, float risc_nivel, float risc_prob, string risc_natura)
         {
             this.risc_id = risc_id;
@@ -45,5 +47,7 @@ namespace RiskManagement.View
         public float Risc_prob { get => risc_prob; set => risc_prob = value; }
         public string Risc_natura { get => risc_natura; set => risc_natura = value; }
         public int Risc_tratat { get => risc_tratat; set => risc_tratat = value; }
+
+        public bool Risc_is_tratat { get => risc_tratat == 0 ? false : true ; set => risc_tratat = value ? 1 : 0; }
     }
 }

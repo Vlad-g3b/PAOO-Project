@@ -72,6 +72,8 @@ namespace RiskManagement
         {
             tratarePanel.BringToFront();
             statusLb.Text = "Tratare riscuri si identificare contramasuri";
+            TratareService.getInstance().incarcareGridViewTratare(ref dataGridViewTratare);
+
         }
 
         private void nmctlBun_SelectedValueChanged(object sender, EventArgs e)
