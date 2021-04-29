@@ -32,7 +32,7 @@ namespace RiskManagement
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fisierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +50,55 @@ namespace RiskManagement
             this.identificareaRiscuriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tratareRiscuriSiIdentificareContramasuriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tratarePanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button11 = new System.Windows.Forms.Button();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.trt_cancel = new System.Windows.Forms.Button();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.dataGridViewTratare = new System.Windows.Forms.DataGridView();
+            this.label43 = new System.Windows.Forms.Label();
+            this.amenintariPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridViewAmn = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.amn_numeCb = new System.Windows.Forms.ComboBox();
+            this.amn_nivel_min = new System.Windows.Forms.ComboBox();
+            this.amn_nivel_max = new System.Windows.Forms.ComboBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.amn_numeTB = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.bunuriPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -120,55 +169,6 @@ namespace RiskManagement
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.tratarePanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.label34 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.trt_cancel = new System.Windows.Forms.Button();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.dataGridViewTratare = new System.Windows.Forms.DataGridView();
-            this.label43 = new System.Windows.Forms.Label();
-            this.amenintariPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridViewAmn = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.amn_numeCb = new System.Windows.Forms.ComboBox();
-            this.amn_nivel_min = new System.Windows.Forms.ComboBox();
-            this.amn_nivel_max = new System.Windows.Forms.ComboBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.amn_numeTB = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLb = new System.Windows.Forms.ToolStripStatusLabel();
             this.label10 = new System.Windows.Forms.Label();
@@ -184,6 +184,18 @@ namespace RiskManagement
             this.mainInterface.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.verticalMenu.SuspendLayout();
+            this.tratarePanel.SuspendLayout();
+            this.tableLayoutPanel15.SuspendLayout();
+            this.tableLayoutPanel16.SuspendLayout();
+            this.tableLayoutPanel17.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTratare)).BeginInit();
+            this.amenintariPanel.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAmn)).BeginInit();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.bunuriPanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -201,18 +213,6 @@ namespace RiskManagement
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVulnerabilitati)).BeginInit();
             this.tableLayoutPanel14.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.tratarePanel.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTratare)).BeginInit();
-            this.amenintariPanel.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAmn)).BeginInit();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -290,9 +290,9 @@ namespace RiskManagement
             // 
             // mainInterface.Panel2
             // 
+            this.mainInterface.Panel2.Controls.Add(this.bunuriPanel);
             this.mainInterface.Panel2.Controls.Add(this.tratarePanel);
             this.mainInterface.Panel2.Controls.Add(this.amenintariPanel);
-            this.mainInterface.Panel2.Controls.Add(this.bunuriPanel);
             this.mainInterface.Panel2.Controls.Add(this.riscuriPanel);
             this.mainInterface.Panel2.Controls.Add(this.vulnerabilitatiPanel);
             this.mainInterface.Size = new System.Drawing.Size(1641, 517);
@@ -399,6 +399,599 @@ namespace RiskManagement
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(287, 9);
             this.panel2.TabIndex = 2;
+            // 
+            // tratarePanel
+            // 
+            this.tratarePanel.Controls.Add(this.tableLayoutPanel15);
+            this.tratarePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tratarePanel.Location = new System.Drawing.Point(0, 0);
+            this.tratarePanel.Name = "tratarePanel";
+            this.tratarePanel.Size = new System.Drawing.Size(1346, 515);
+            this.tratarePanel.TabIndex = 4;
+            // 
+            // tableLayoutPanel15
+            // 
+            this.tableLayoutPanel15.ColumnCount = 2;
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel16, 0, 0);
+            this.tableLayoutPanel15.Controls.Add(this.dataGridViewTratare, 0, 3);
+            this.tableLayoutPanel15.Controls.Add(this.label43, 0, 2);
+            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
+            this.tableLayoutPanel15.RowCount = 4;
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(1346, 515);
+            this.tableLayoutPanel15.TabIndex = 0;
+            // 
+            // tableLayoutPanel16
+            // 
+            this.tableLayoutPanel16.ColumnCount = 1;
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel16.Controls.Add(this.label34, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel17, 0, 1);
+            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
+            this.tableLayoutPanel16.RowCount = 2;
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.70513F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.29487F));
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(1320, 312);
+            this.tableLayoutPanel16.TabIndex = 0;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(3, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(1314, 49);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "Tratare risucri si identificare contramasuri";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel17
+            // 
+            this.tableLayoutPanel17.ColumnCount = 1;
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel17.Controls.Add(this.label35, 0, 0);
+            this.tableLayoutPanel17.Controls.Add(this.panel6, 0, 1);
+            this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(3, 52);
+            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
+            this.tableLayoutPanel17.RowCount = 2;
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.61868F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.38132F));
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(1314, 257);
+            this.tableLayoutPanel17.TabIndex = 0;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.tableLayoutPanel17.SetColumnSpan(this.label35, 9);
+            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(3, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(1308, 35);
+            this.label35.TabIndex = 1;
+            this.label35.Text = " Identificare contramasuri";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.button11);
+            this.panel6.Controls.Add(this.textBox17);
+            this.panel6.Controls.Add(this.label46);
+            this.panel6.Controls.Add(this.textBox22);
+            this.panel6.Controls.Add(this.label45);
+            this.panel6.Controls.Add(this.textBox23);
+            this.panel6.Controls.Add(this.label44);
+            this.panel6.Controls.Add(this.trt_cancel);
+            this.panel6.Controls.Add(this.textBox19);
+            this.panel6.Controls.Add(this.textBox20);
+            this.panel6.Controls.Add(this.label38);
+            this.panel6.Controls.Add(this.label39);
+            this.panel6.Controls.Add(this.textBox21);
+            this.panel6.Controls.Add(this.textBox24);
+            this.panel6.Controls.Add(this.textBox25);
+            this.panel6.Controls.Add(this.textBox26);
+            this.panel6.Controls.Add(this.label40);
+            this.panel6.Controls.Add(this.label41);
+            this.panel6.Controls.Add(this.label42);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel6.Location = new System.Drawing.Point(3, 38);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1308, 216);
+            this.panel6.TabIndex = 2;
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(709, 172);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(172, 28);
+            this.button11.TabIndex = 27;
+            this.button11.Text = "Adauga";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(423, 172);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(207, 26);
+            this.textBox17.TabIndex = 26;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(420, 140);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(114, 20);
+            this.label46.TabIndex = 25;
+            this.label46.Text = "Vulnerabilitate:";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(424, 105);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(207, 26);
+            this.textBox22.TabIndex = 24;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(420, 76);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(95, 20);
+            this.label45.TabIndex = 23;
+            this.label45.Text = "Amenintare:";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(16, 172);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(361, 26);
+            this.textBox23.TabIndex = 22;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(13, 140);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(136, 20);
+            this.label44.TabIndex = 21;
+            this.label44.Text = "Metode de tratare";
+            // 
+            // trt_cancel
+            // 
+            this.trt_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trt_cancel.Location = new System.Drawing.Point(887, 172);
+            this.trt_cancel.Name = "trt_cancel";
+            this.trt_cancel.Size = new System.Drawing.Size(173, 29);
+            this.trt_cancel.TabIndex = 18;
+            this.trt_cancel.Text = "Anuleaza";
+            this.trt_cancel.UseVisualStyleBackColor = true;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(186, 106);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(191, 26);
+            this.textBox19.TabIndex = 14;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(16, 106);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(146, 26);
+            this.textBox20.TabIndex = 13;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(182, 75);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(194, 20);
+            this.label38.TabIndex = 10;
+            this.label38.Text = "Propabilitatea de aparatie:";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(14, 73);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(110, 20);
+            this.label39.TabIndex = 9;
+            this.label39.Text = "Nivelul riscului:";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(709, 30);
+            this.textBox21.Multiline = true;
+            this.textBox21.Name = "textBox21";
+            this.textBox21.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox21.Size = new System.Drawing.Size(346, 65);
+            this.textBox21.TabIndex = 8;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(709, 102);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(346, 26);
+            this.textBox24.TabIndex = 5;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(423, 33);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(207, 26);
+            this.textBox25.TabIndex = 4;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(17, 34);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(360, 26);
+            this.textBox26.TabIndex = 3;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(705, 6);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(262, 20);
+            this.label40.TabIndex = 2;
+            this.label40.Text = "Contramasuri, Categoria \"activititati\"";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(419, 6);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(42, 20);
+            this.label41.TabIndex = 1;
+            this.label41.Text = "Bun:";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(13, 6);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(83, 20);
+            this.label42.TabIndex = 0;
+            this.label42.Text = "Nume risc:";
+            // 
+            // dataGridViewTratare
+            // 
+            this.dataGridViewTratare.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewTratare.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTratare.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewTratare.Location = new System.Drawing.Point(3, 348);
+            this.dataGridViewTratare.Name = "dataGridViewTratare";
+            this.dataGridViewTratare.Size = new System.Drawing.Size(1320, 164);
+            this.dataGridViewTratare.TabIndex = 1;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(3, 318);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(1320, 27);
+            this.label43.TabIndex = 2;
+            this.label43.Text = "Riscuri";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // amenintariPanel
+            // 
+            this.amenintariPanel.Controls.Add(this.tableLayoutPanel5);
+            this.amenintariPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amenintariPanel.Location = new System.Drawing.Point(0, 0);
+            this.amenintariPanel.Name = "amenintariPanel";
+            this.amenintariPanel.Size = new System.Drawing.Size(1346, 515);
+            this.amenintariPanel.TabIndex = 1;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Controls.Add(this.dataGridViewAmn, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label17, 0, 2);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 4;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1346, 515);
+            this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // dataGridViewAmn
+            // 
+            this.dataGridViewAmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAmn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewAmn.Location = new System.Drawing.Point(3, 348);
+            this.dataGridViewAmn.Name = "dataGridViewAmn";
+            this.dataGridViewAmn.Size = new System.Drawing.Size(1320, 164);
+            this.dataGridViewAmn.TabIndex = 1;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.label8, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 1);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 3;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.70513F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.29487F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1320, 312);
+            this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(1314, 45);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Identificare amenintari";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 1;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.label11, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel8, 0, 1);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 48);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 2;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.61868F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.38132F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1314, 240);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.tableLayoutPanel7.SetColumnSpan(this.label11, 9);
+            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(3, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(1308, 32);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Adaguare / editatre amenintari";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 5;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.02878F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.97122F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 232F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 301F));
+            this.tableLayoutPanel8.Controls.Add(this.label12, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.label13, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.label14, 0, 2);
+            this.tableLayoutPanel8.Controls.Add(this.label15, 0, 3);
+            this.tableLayoutPanel8.Controls.Add(this.label16, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.amn_numeCb, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.amn_nivel_min, 1, 2);
+            this.tableLayoutPanel8.Controls.Add(this.amn_nivel_max, 1, 3);
+            this.tableLayoutPanel8.Controls.Add(this.checkedListBox1, 3, 0);
+            this.tableLayoutPanel8.Controls.Add(this.button4, 4, 4);
+            this.tableLayoutPanel8.Controls.Add(this.button3, 3, 4);
+            this.tableLayoutPanel8.Controls.Add(this.amn_numeTB, 1, 1);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 35);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 6;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1308, 202);
+            this.tableLayoutPanel8.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(23, 0);
+            this.label12.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(179, 31);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Nomendator amenintari:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(147, 34);
+            this.label13.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 31);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Nume:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(111, 68);
+            this.label14.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(91, 31);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Nivel minim:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(107, 102);
+            this.label15.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(95, 31);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Nivel maxim:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(690, 0);
+            this.label16.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label16.Name = "label16";
+            this.tableLayoutPanel8.SetRowSpan(this.label16, 2);
+            this.label16.Size = new System.Drawing.Size(59, 65);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Bunuri:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // amn_numeCb
+            // 
+            this.amn_numeCb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amn_numeCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.amn_numeCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amn_numeCb.FormattingEnabled = true;
+            this.amn_numeCb.Location = new System.Drawing.Point(205, 3);
+            this.amn_numeCb.Name = "amn_numeCb";
+            this.amn_numeCb.Size = new System.Drawing.Size(309, 28);
+            this.amn_numeCb.TabIndex = 5;
+            this.amn_numeCb.SelectedIndexChanged += new System.EventHandler(this.amn_numeCb_SelectedIndexChanged);
+            // 
+            // amn_nivel_min
+            // 
+            this.amn_nivel_min.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amn_nivel_min.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.amn_nivel_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amn_nivel_min.FormattingEnabled = true;
+            this.amn_nivel_min.Items.AddRange(new object[] {
+            "Foare mic",
+            "Mic",
+            "Mediu",
+            "Mare",
+            "Foarte mare"});
+            this.amn_nivel_min.Location = new System.Drawing.Point(205, 71);
+            this.amn_nivel_min.Name = "amn_nivel_min";
+            this.amn_nivel_min.Size = new System.Drawing.Size(309, 28);
+            this.amn_nivel_min.TabIndex = 6;
+            // 
+            // amn_nivel_max
+            // 
+            this.amn_nivel_max.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amn_nivel_max.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.amn_nivel_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amn_nivel_max.FormattingEnabled = true;
+            this.amn_nivel_max.Items.AddRange(new object[] {
+            "Foare mic",
+            "Mic",
+            "Mediu",
+            "Mare",
+            "Foarte mare"});
+            this.amn_nivel_max.Location = new System.Drawing.Point(205, 105);
+            this.amn_nivel_max.Name = "amn_nivel_max";
+            this.amn_nivel_max.Size = new System.Drawing.Size(309, 28);
+            this.amn_nivel_max.TabIndex = 7;
+            // 
+            // checkedListBox1
+            // 
+            this.tableLayoutPanel8.SetColumnSpan(this.checkedListBox1, 2);
+            this.checkedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(752, 3);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.tableLayoutPanel8.SetRowSpan(this.checkedListBox1, 4);
+            this.checkedListBox1.Size = new System.Drawing.Size(553, 130);
+            this.checkedListBox1.TabIndex = 9;
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(1009, 139);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(296, 33);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Anuleaza";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(752, 139);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(251, 33);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Salveaza";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // amn_numeTB
+            // 
+            this.amn_numeTB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.amn_numeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amn_numeTB.Location = new System.Drawing.Point(205, 37);
+            this.amn_numeTB.Name = "amn_numeTB";
+            this.amn_numeTB.Size = new System.Drawing.Size(309, 26);
+            this.amn_numeTB.TabIndex = 8;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(3, 318);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(1320, 27);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Amenintari";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // bunuriPanel
             // 
@@ -718,14 +1311,14 @@ namespace RiskManagement
             // gridViewBun
             // 
             this.gridViewBun.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewBun.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewBun.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridViewBun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridViewBun.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridViewBun.Location = new System.Drawing.Point(3, 220);
@@ -1290,599 +1883,6 @@ namespace RiskManagement
             this.label30.TabIndex = 0;
             this.label30.Text = "Nomenclator vulnerabilitati:";
             // 
-            // tratarePanel
-            // 
-            this.tratarePanel.Controls.Add(this.tableLayoutPanel15);
-            this.tratarePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tratarePanel.Location = new System.Drawing.Point(0, 0);
-            this.tratarePanel.Name = "tratarePanel";
-            this.tratarePanel.Size = new System.Drawing.Size(1346, 515);
-            this.tratarePanel.TabIndex = 4;
-            // 
-            // tableLayoutPanel15
-            // 
-            this.tableLayoutPanel15.ColumnCount = 2;
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel16, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.dataGridViewTratare, 0, 3);
-            this.tableLayoutPanel15.Controls.Add(this.label43, 0, 2);
-            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
-            this.tableLayoutPanel15.RowCount = 4;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(1346, 515);
-            this.tableLayoutPanel15.TabIndex = 0;
-            // 
-            // tableLayoutPanel16
-            // 
-            this.tableLayoutPanel16.ColumnCount = 1;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Controls.Add(this.label34, 0, 0);
-            this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel17, 0, 1);
-            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 2;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.70513F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.29487F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(1320, 312);
-            this.tableLayoutPanel16.TabIndex = 0;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(3, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(1314, 49);
-            this.label34.TabIndex = 1;
-            this.label34.Text = "Tratare risucri si identificare contramasuri";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel17
-            // 
-            this.tableLayoutPanel17.ColumnCount = 1;
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel17.Controls.Add(this.label35, 0, 0);
-            this.tableLayoutPanel17.Controls.Add(this.panel6, 0, 1);
-            this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(3, 52);
-            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
-            this.tableLayoutPanel17.RowCount = 2;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.61868F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.38132F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(1314, 257);
-            this.tableLayoutPanel17.TabIndex = 0;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.tableLayoutPanel17.SetColumnSpan(this.label35, 9);
-            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(3, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(1308, 35);
-            this.label35.TabIndex = 1;
-            this.label35.Text = " Identificare contramasuri";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.button11);
-            this.panel6.Controls.Add(this.textBox17);
-            this.panel6.Controls.Add(this.label46);
-            this.panel6.Controls.Add(this.textBox22);
-            this.panel6.Controls.Add(this.label45);
-            this.panel6.Controls.Add(this.textBox23);
-            this.panel6.Controls.Add(this.label44);
-            this.panel6.Controls.Add(this.trt_cancel);
-            this.panel6.Controls.Add(this.textBox19);
-            this.panel6.Controls.Add(this.textBox20);
-            this.panel6.Controls.Add(this.label38);
-            this.panel6.Controls.Add(this.label39);
-            this.panel6.Controls.Add(this.textBox21);
-            this.panel6.Controls.Add(this.textBox24);
-            this.panel6.Controls.Add(this.textBox25);
-            this.panel6.Controls.Add(this.textBox26);
-            this.panel6.Controls.Add(this.label40);
-            this.panel6.Controls.Add(this.label41);
-            this.panel6.Controls.Add(this.label42);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(3, 38);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1308, 216);
-            this.panel6.TabIndex = 2;
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(709, 172);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(172, 28);
-            this.button11.TabIndex = 27;
-            this.button11.Text = "Adauga";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(423, 172);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(207, 26);
-            this.textBox17.TabIndex = 26;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(420, 140);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(114, 20);
-            this.label46.TabIndex = 25;
-            this.label46.Text = "Vulnerabilitate:";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(424, 105);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(207, 26);
-            this.textBox22.TabIndex = 24;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(420, 76);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(95, 20);
-            this.label45.TabIndex = 23;
-            this.label45.Text = "Amenintare:";
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(16, 172);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(361, 26);
-            this.textBox23.TabIndex = 22;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(13, 140);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(136, 20);
-            this.label44.TabIndex = 21;
-            this.label44.Text = "Metode de tratare";
-            // 
-            // trt_cancel
-            // 
-            this.trt_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trt_cancel.Location = new System.Drawing.Point(887, 172);
-            this.trt_cancel.Name = "trt_cancel";
-            this.trt_cancel.Size = new System.Drawing.Size(173, 29);
-            this.trt_cancel.TabIndex = 18;
-            this.trt_cancel.Text = "Anuleaza";
-            this.trt_cancel.UseVisualStyleBackColor = true;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(186, 106);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(191, 26);
-            this.textBox19.TabIndex = 14;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(16, 106);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(146, 26);
-            this.textBox20.TabIndex = 13;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(182, 75);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(194, 20);
-            this.label38.TabIndex = 10;
-            this.label38.Text = "Propabilitatea de aparatie:";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(14, 73);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(110, 20);
-            this.label39.TabIndex = 9;
-            this.label39.Text = "Nivelul riscului:";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(709, 30);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox21.Size = new System.Drawing.Size(346, 65);
-            this.textBox21.TabIndex = 8;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(709, 102);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(346, 26);
-            this.textBox24.TabIndex = 5;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(423, 33);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(207, 26);
-            this.textBox25.TabIndex = 4;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(17, 34);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(360, 26);
-            this.textBox26.TabIndex = 3;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(705, 6);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(262, 20);
-            this.label40.TabIndex = 2;
-            this.label40.Text = "Contramasuri, Categoria \"activititati\"";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(419, 6);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(42, 20);
-            this.label41.TabIndex = 1;
-            this.label41.Text = "Bun:";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(13, 6);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(83, 20);
-            this.label42.TabIndex = 0;
-            this.label42.Text = "Nume risc:";
-            // 
-            // dataGridViewTratare
-            // 
-            this.dataGridViewTratare.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewTratare.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTratare.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewTratare.Location = new System.Drawing.Point(3, 348);
-            this.dataGridViewTratare.Name = "dataGridViewTratare";
-            this.dataGridViewTratare.Size = new System.Drawing.Size(1320, 164);
-            this.dataGridViewTratare.TabIndex = 1;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(3, 318);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(1320, 27);
-            this.label43.TabIndex = 2;
-            this.label43.Text = "Riscuri";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // amenintariPanel
-            // 
-            this.amenintariPanel.Controls.Add(this.tableLayoutPanel5);
-            this.amenintariPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.amenintariPanel.Location = new System.Drawing.Point(0, 0);
-            this.amenintariPanel.Name = "amenintariPanel";
-            this.amenintariPanel.Size = new System.Drawing.Size(1346, 515);
-            this.amenintariPanel.TabIndex = 1;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Controls.Add(this.dataGridViewAmn, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.label17, 0, 2);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 4;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1346, 515);
-            this.tableLayoutPanel5.TabIndex = 0;
-            // 
-            // dataGridViewAmn
-            // 
-            this.dataGridViewAmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewAmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAmn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewAmn.Location = new System.Drawing.Point(3, 348);
-            this.dataGridViewAmn.Name = "dataGridViewAmn";
-            this.dataGridViewAmn.Size = new System.Drawing.Size(1320, 164);
-            this.dataGridViewAmn.TabIndex = 1;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 1);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 3;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.70513F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.29487F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1320, 312);
-            this.tableLayoutPanel6.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1314, 45);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Identificare amenintari";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.ColumnCount = 1;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.label11, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel8, 0, 1);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 48);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.61868F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.38132F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1314, 240);
-            this.tableLayoutPanel7.TabIndex = 0;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.tableLayoutPanel7.SetColumnSpan(this.label11, 9);
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1308, 32);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Adaguare / editatre amenintari";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.ColumnCount = 5;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.02878F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.97122F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 232F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
-            this.tableLayoutPanel8.Controls.Add(this.label12, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.label13, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.label14, 0, 2);
-            this.tableLayoutPanel8.Controls.Add(this.label15, 0, 3);
-            this.tableLayoutPanel8.Controls.Add(this.label16, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.amn_numeCb, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.amn_nivel_min, 1, 2);
-            this.tableLayoutPanel8.Controls.Add(this.amn_nivel_max, 1, 3);
-            this.tableLayoutPanel8.Controls.Add(this.checkedListBox1, 3, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button4, 4, 4);
-            this.tableLayoutPanel8.Controls.Add(this.button3, 3, 4);
-            this.tableLayoutPanel8.Controls.Add(this.amn_numeTB, 1, 1);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 35);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 6;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1308, 202);
-            this.tableLayoutPanel8.TabIndex = 2;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(23, 0);
-            this.label12.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(179, 31);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Nomendator amenintari:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(147, 34);
-            this.label13.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 31);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Nume:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(111, 68);
-            this.label14.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(91, 31);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Nivel minim:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(107, 102);
-            this.label15.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(95, 31);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "Nivel maxim:";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(691, 0);
-            this.label16.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label16.Name = "label16";
-            this.tableLayoutPanel8.SetRowSpan(this.label16, 2);
-            this.label16.Size = new System.Drawing.Size(59, 65);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Bunuri:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // amn_numeCb
-            // 
-            this.amn_numeCb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.amn_numeCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.amn_numeCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amn_numeCb.FormattingEnabled = true;
-            this.amn_numeCb.Location = new System.Drawing.Point(205, 3);
-            this.amn_numeCb.Name = "amn_numeCb";
-            this.amn_numeCb.Size = new System.Drawing.Size(310, 28);
-            this.amn_numeCb.TabIndex = 5;
-            this.amn_numeCb.SelectedIndexChanged += new System.EventHandler(this.amn_numeCb_SelectedIndexChanged);
-            // 
-            // amn_nivel_min
-            // 
-            this.amn_nivel_min.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.amn_nivel_min.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.amn_nivel_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amn_nivel_min.FormattingEnabled = true;
-            this.amn_nivel_min.Items.AddRange(new object[] {
-            "Foare mic",
-            "Mic",
-            "Mediu",
-            "Mare",
-            "Foarte mare"});
-            this.amn_nivel_min.Location = new System.Drawing.Point(205, 71);
-            this.amn_nivel_min.Name = "amn_nivel_min";
-            this.amn_nivel_min.Size = new System.Drawing.Size(310, 28);
-            this.amn_nivel_min.TabIndex = 6;
-            // 
-            // amn_nivel_max
-            // 
-            this.amn_nivel_max.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.amn_nivel_max.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.amn_nivel_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amn_nivel_max.FormattingEnabled = true;
-            this.amn_nivel_max.Items.AddRange(new object[] {
-            "Foare mic",
-            "Mic",
-            "Mediu",
-            "Mare",
-            "Foarte mare"});
-            this.amn_nivel_max.Location = new System.Drawing.Point(205, 105);
-            this.amn_nivel_max.Name = "amn_nivel_max";
-            this.amn_nivel_max.Size = new System.Drawing.Size(310, 28);
-            this.amn_nivel_max.TabIndex = 7;
-            // 
-            // checkedListBox1
-            // 
-            this.tableLayoutPanel8.SetColumnSpan(this.checkedListBox1, 2);
-            this.checkedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(753, 3);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.tableLayoutPanel8.SetRowSpan(this.checkedListBox1, 4);
-            this.checkedListBox1.Size = new System.Drawing.Size(552, 130);
-            this.checkedListBox1.TabIndex = 9;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(1010, 139);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(295, 33);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Anuleaza";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(753, 139);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(251, 33);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Salveaza";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // amn_numeTB
-            // 
-            this.amn_numeTB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.amn_numeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amn_numeTB.Location = new System.Drawing.Point(205, 37);
-            this.amn_numeTB.Name = "amn_numeTB";
-            this.amn_numeTB.Size = new System.Drawing.Size(310, 26);
-            this.amn_numeTB.TabIndex = 8;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(3, 318);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(1320, 27);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Amenintari";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // statusStrip1
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -1969,6 +1969,26 @@ namespace RiskManagement
             this.tableLayoutPanel1.PerformLayout();
             this.verticalMenu.ResumeLayout(false);
             this.verticalMenu.PerformLayout();
+            this.tratarePanel.ResumeLayout(false);
+            this.tableLayoutPanel15.ResumeLayout(false);
+            this.tableLayoutPanel15.PerformLayout();
+            this.tableLayoutPanel16.ResumeLayout(false);
+            this.tableLayoutPanel16.PerformLayout();
+            this.tableLayoutPanel17.ResumeLayout(false);
+            this.tableLayoutPanel17.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTratare)).EndInit();
+            this.amenintariPanel.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAmn)).EndInit();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
             this.bunuriPanel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1995,26 +2015,6 @@ namespace RiskManagement
             this.tableLayoutPanel14.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.tratarePanel.ResumeLayout(false);
-            this.tableLayoutPanel15.ResumeLayout(false);
-            this.tableLayoutPanel15.PerformLayout();
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.tableLayoutPanel16.PerformLayout();
-            this.tableLayoutPanel17.ResumeLayout(false);
-            this.tableLayoutPanel17.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTratare)).EndInit();
-            this.amenintariPanel.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAmn)).EndInit();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
